@@ -1,0 +1,255 @@
+/** 
+ * Project Name: Landing Page
+**/
+
+/*----------------------------------------------------------------------------- 
+00=IMPORTS
+-----------------------------------------------------------------------------*/
+
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/theme";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+/*----------------------------------------------------------------------------- 
+01=THEMES
+-----------------------------------------------------------------------------*/
+
+$font-stack: "Calibri Light", sans-serif;
+$black: #000000;
+$white: #FFFFFF;
+$gray: #EEEEEE;
+$dark-blue: #244185;
+$nav-height: 80px;
+$success: #5cb85c;
+$error: #d9534f;
+
+/*----------------------------------------------------------------------------- 
+02=BASE   
+-----------------------------------------------------------------------------*/
+
+/* For sticky footer */
+html {
+  position: relative;
+  min-height: 100%;  
+  
+}
+body { 
+  font-size: 18px; 
+  word-wrap: break-word;  
+  font-family: $font-stack;
+
+  h1 {
+    font-family: $font-stack;
+  }
+
+}
+
+hr {  
+  border-top: 1px solid $black;
+}
+
+img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+textarea {  
+  resize: none;
+}
+
+// for tablet display
+@media (max-width: 767px) {  
+  body {
+    font-size: 14px;  
+
+    blockquote {
+      font-size: 14px;        
+    }
+  }
+  
+  h1 {
+   font-size: 28px; 
+  }
+
+}
+
+.btn {
+  border: 1px solid $black;
+  background-color: $white;
+  width: 160px;
+  color: $black;
+  border-radius: 0;
+  padding: 15px 25px;
+}
+
+.btn:hover {
+  border: 1px solid $dark-blue;
+  background-color: $dark-blue;
+  color: $white;
+}
+
+/*----------------------------------------------------------------------------- 
+03=NAV
+-----------------------------------------------------------------------------*/
+
+.navbar {   
+  height: $nav-height;
+  margin: 0;
+  padding: 10px;
+  border: none;
+}
+
+.navbar-default {
+  background-image: none;
+  box-shadow: none;
+  background-color: $white;
+  background: rgba(255, 255, 255, 0);  
+  border-color: #FFFFFF;
+
+  .navbar-toggle {
+    margin: 15px;
+    border-color: $black;
+    color: $black;
+    border-radius: 0;
+  }
+
+  .navbar-brand {
+    color: #000000;
+  }
+}
+
+/*----------------------------------------------------------------------------- 
+04=HEADER
+-----------------------------------------------------------------------------*/
+header {
+  // background: url("../images/background.jpg");
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;  
+  height: 600px;  
+
+  img {
+    width: 40%;    
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .subtext {
+    font-size: 14px;
+    text-align: center;
+    position: absolute;    
+    width: 500px;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);             
+  }
+
+  a.contact-us {
+    position: absolute;
+    top: 60%;
+    left: 50%; 
+    transform: translate(25%, -50%);    
+  }
+
+  a.learn-more {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-125%, -50%);
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    img {
+      width: 60%;    
+    }
+  }
+}
+
+@media (max-width: 480px) {  
+
+  header {
+    height: 500px !important;     
+
+    img {
+      top: 25%;
+      width: 90%;    
+    }
+
+    .subtext { 
+      font-size: 12px;     
+      width: 250px !important;    
+      top: 45%;
+    }
+
+    a.contact-us {      
+      transform: translate(-50%, 150%);
+    }
+
+    a.learn-more {      
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/*----------------------------------------------------------------------------- 
+05=FOOTER
+-----------------------------------------------------------------------------*/
+
+footer {
+  position: absolute;  
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  background-color: $white;
+  text-align: center;
+}
+
+/*----------------------------------------------------------------------------- 
+06=HOME
+-----------------------------------------------------------------------------*/
+
+#home {
+  margin-top: 50px;
+}
+
+/*----------------------------------------------------------------------------- 
+07=CONTACT
+-----------------------------------------------------------------------------*/
+
+#contact {
+  h3 {
+    margin: 0;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  textarea.form-control {
+    height: 100px;
+  }
+
+  form span {
+    font-size: 10px;
+  }
+}
+
+/*----------------------------------------------------------------------------- 
+08=OUTCOME
+-----------------------------------------------------------------------------*/
+
+.small-text {
+  font-size: 14px;
+}
+
+.outcome-success {
+  background-color: $success;
+}
+
+.outcome-error {
+  background-color: $error;
+}

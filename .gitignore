@@ -1,0 +1,7 @@
+src/images
+node_modules
+functions/node_modules
+functions/emails.json
+dist
+database.rules.json
+.firebaserc

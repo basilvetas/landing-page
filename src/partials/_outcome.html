@@ -1,0 +1,14 @@
+<div id="contact" class="modal-content">
+	<div class="modal-header ng-scope small-text" ng-class="{'outcome-success': success, 'outcome-error': !success}">
+		<div class="col-xs-6">		
+			<div ng-if="success">Thank you, we will respond shortly.</div>
+			<div ng-if="!success">Message not sent, please try again.</div>
+		</div>
+		<div class="col-xs-6">
+			<button data-dismiss="modal" class="close" type="button" ng-click="cancel()">
+		    <span aria-hidden="true">×</span>
+		    <span class="sr-only">Close</span>
+			</button>
+		</div>	   	   
+	</div>	
+</div>
