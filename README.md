@@ -1,16 +1,38 @@
 # Landing Page
 
+## FOR CLIENT:
+
 INSTALL DEPENDENCIES:
-yarn
+`yarn`
 
 INSTALL FIREBASE:
-firebase init
+`firebase init`
 
 CLEAN BUILD
-gulp clean
+`gulp clean`
 
 BUILD PROJECT
-gulp
+`gulp`
 
 START DEV SERVER
-gulp dev
+`gulp dev`
+
+DEPLOY TO FIREBASE:
+`firebase deploy`
+
+
+## FOR FUNCTIONS:
+
+INSTALL DEPENDENCIES:
+`yarn`
+
+SET CONFIG EMAIL:
+`firebase functions:config:set gmail.password="YOUR-PASSWORD" gmail.email="YOUR-EMAIL"`
+
+CHECK CONFIG EMAIL:
+`firebase functions:config:get`
+
+DEPLOY TO FIREBASE:
+`firebase deploy --only functions`
+
+

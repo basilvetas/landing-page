@@ -1,8 +1,6 @@
 const functions = require('firebase-functions');
 
-const email1, email2, email3 = require(`emails.json`);
-
-console.log(email1, email2, email3);
+const {email1:email1, email2:email2, email3:email3} = require('./emails.json');
 
 const admin = require('firebase-admin');
 admin.initializeApp(functions.config().firebase);
